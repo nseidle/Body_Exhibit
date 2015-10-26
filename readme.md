@@ -3,7 +3,7 @@ WOW Museum Body Exhibit
 
 The body exhibit allows children to press one of twelve buttons and see that part of the skeletal or organ system light up. An audio track saying the organ/bone name in English and Spanish is heard. An information audio track is heard if the button is pressed a second time. 
 
-![RedBoard with Audio Amplifier and Sharp IR sensor](https://raw.githubusercontent.com/nseidle/Book_Eater/master/Book_Eater_Stackup.jpg "SparkFun RedBoard with amplifier and Sharp IR sensor")
+![The body exhibit lit up](https://raw.githubusercontent.com/nseidle/Body_Exhibit/master/Body-Exhibit-Front.jpg)
 
 The system monitors the state of 12 buttons. When a button is pressed a string of 8 LEDs is lit and plays the corresponding MP3 track. I designed a custom shield to allow for JST connections to each channel (LED+button). 
 
@@ -34,7 +34,7 @@ I experimented with some of the cheap amplifiers found on Amazon. The SparkFun c
 
 The string of LEDs is the type that has three thin wires and a blob of epoxy over a 1206 sized SMD LED. The wire is enamelized so you have to burn the enamel off before you can solder to it. I use a blob of solder on the end of my iron and hold it there for 5-10 seconds to burn the enamel off. You should probably do so in a well ventilated because it smells pretty rough.
 
-![Close up of the protoshield with various wires and connectors](https://raw.githubusercontent.com/nseidle/Book_Eater/master/Book_Eater_Closeup.jpg)
+![The internal wiring of the body exhibit](https://raw.githubusercontent.com/nseidle/Body_Exhibit/master/Body-Exhibit-Rear.jpg)
 
 To prep the audio amp for external control: cut the small jumper, solder in two 10k PTH resistors, and then the 10k trim pot. This will allow user controllable volume. It is *very* loud and *very* clean with a good speaker and a wall power supply. Powering the MP3 player and audio amp via USB will introduce buzzing; I used an external 5V wall supply to power the amp directly.
 
@@ -44,7 +44,7 @@ The MP3 shield "-" and "R" pins are wired to the "-" and "+" pins of the "In" po
 
 The Mega2560 has a bug in its bootloader that doesn't allow normal usage of the watchdog. Because this is an exhibit that can be left on for weeks at a time I needed a method to prevent system hangs. I found a good solution [here](http://forum.arduino.cc/index.php?topic=62813.25) - thanks draythomp!
 
-Another lesson: Label everything. When the wiring gets rough the labels are what will keep you sane. 
+Another lesson: Label all the wires, sometimes in multiple places. When the wiring gets rough the labels are what will keep you sane. 
 
 License Information
 -------------------
