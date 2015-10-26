@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -21662,14 +21662,45 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <sheet>
 <plain>
 <text x="30.48" y="10.16" size="1.778" layer="97">N. Seidle</text>
-<text x="15.24" y="137.16" size="1.778" layer="97">In line audio switch</text>
-<text x="15.24" y="134.62" size="1.778" layer="97">In line power w/ safety</text>
-<text x="15.24" y="132.08" size="1.778" layer="97">In line power</text>
-<text x="15.24" y="129.54" size="1.778" layer="97">Dispenser control</text>
-<text x="12.7" y="127" size="1.778" layer="97">v1.1</text>
-<text x="15.24" y="124.46" size="1.778" layer="97">Make Game switch an GPIO</text>
-<text x="15.24" y="121.92" size="1.778" layer="97">Increased holes for switches</text>
+<text x="15.24" y="137.16" size="1.778" layer="97">Place for amp on purple shield</text>
 <text x="12.7" y="139.7" size="1.778" layer="97">v1.0</text>
+<text x="266.7" y="27.94" size="1.778" layer="97">V=I*R
+(5-.7)=I*35
+I=122mA</text>
+<text x="96.52" y="138.938" size="1.778" layer="97">D22</text>
+<text x="96.52" y="136.398" size="1.778" layer="97">D24</text>
+<text x="96.52" y="133.858" size="1.778" layer="97">D26</text>
+<text x="96.52" y="131.318" size="1.778" layer="97">D28</text>
+<text x="96.52" y="128.778" size="1.778" layer="97">D30</text>
+<text x="96.52" y="126.238" size="1.778" layer="97">D32</text>
+<text x="96.52" y="123.698" size="1.778" layer="97">D34</text>
+<text x="147.32" y="138.938" size="1.778" layer="97">D23</text>
+<text x="147.32" y="136.398" size="1.778" layer="97">D25</text>
+<text x="147.32" y="133.858" size="1.778" layer="97">D27</text>
+<text x="147.32" y="131.318" size="1.778" layer="97">D29</text>
+<text x="147.32" y="128.778" size="1.778" layer="97">D31</text>
+<text x="147.32" y="126.238" size="1.778" layer="97">D33</text>
+<text x="147.32" y="123.698" size="1.778" layer="97">D35</text>
+<text x="79.502" y="167.64" size="1.778" layer="97" rot="R90">D14</text>
+<text x="82.042" y="167.64" size="1.778" layer="97" rot="R90">D15</text>
+<text x="84.582" y="167.64" size="1.778" layer="97" rot="R90">D16</text>
+<text x="87.122" y="167.64" size="1.778" layer="97" rot="R90">D17</text>
+<text x="89.662" y="167.64" size="1.778" layer="97" rot="R90">D18</text>
+<text x="92.202" y="167.64" size="1.778" layer="97" rot="R90">D19</text>
+<text x="64.262" y="167.64" size="1.778" layer="97" rot="R90">D2</text>
+<text x="51.562" y="167.64" size="1.778" layer="97" rot="R90">D7</text>
+<text x="147.32" y="105.918" size="1.778" layer="97">D49</text>
+<text x="147.32" y="103.378" size="1.778" layer="97">D51</text>
+<text x="147.32" y="100.838" size="1.778" layer="97">D53</text>
+<text x="26.162" y="167.64" size="1.778" layer="97" rot="R90">D13</text>
+<text x="38.862" y="167.64" size="1.778" layer="97" rot="R90">D8</text>
+<text x="15.24" y="134.62" size="1.778" layer="97">move Btn0 from D13</text>
+<text x="15.24" y="132.08" size="1.778" layer="97">Move MP3 SPI to avoid power jack</text>
+<text x="15.24" y="129.54" size="1.778" layer="97">avoid MP3-RST and CS pins on 8/9</text>
+<text x="15.24" y="127" size="1.27" layer="91">Remove stuff from pins 2, 6, 7</text>
+<text x="266.7" y="111.76" size="1.778" layer="97">Uses standard 2N3904 NPN, max of 200mA</text>
+<text x="15.24" y="124.46" size="1.778" layer="97">Use ISP for SPI on MP3</text>
+<text x="15.24" y="121.92" size="1.778" layer="97">Change to SparkFun amp</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -21980,7 +22011,6 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 </segment>
 <segment>
 <wire x1="22.86" y1="157.48" x2="22.86" y2="160.02" width="0.1524" layer="91"/>
-<label x="23.622" y="160.02" size="1.778" layer="95" rot="R90"/>
 <pinref part="JP3" gate="G$1" pin="7"/>
 <label x="22.86" y="160.02" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -22239,14 +22269,14 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 </net>
 <net name="LED5" class="0">
 <segment>
-<wire x1="63.5" y1="160.02" x2="63.5" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="G$1" pin="3"/>
-<label x="63.5" y="160.02" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R18" gate="G$1" pin="1"/>
 <wire x1="495.3" y1="132.08" x2="492.76" y2="132.08" width="0.1524" layer="91"/>
 <label x="492.76" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP8" gate="G$1" pin="12"/>
+<wire x1="134.62" y1="129.54" x2="137.16" y2="129.54" width="0.1524" layer="91"/>
+<label x="137.16" y="129.54" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="LED4" class="0">
@@ -22263,20 +22293,19 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 </net>
 <net name="LED3" class="0">
 <segment>
-<wire x1="53.34" y1="160.02" x2="53.34" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="G$1" pin="7"/>
-<label x="53.34" y="160.02" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="403.86" y1="132.08" x2="401.32" y2="132.08" width="0.1524" layer="91"/>
 <label x="401.32" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="111.76" y1="129.54" x2="114.3" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="JP9" gate="G$1" pin="5"/>
+<label x="111.76" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="AREF" class="0">
 <segment>
 <wire x1="20.32" y1="157.48" x2="20.32" y2="160.02" width="0.1524" layer="91"/>
-<label x="20.828" y="160.02" size="1.778" layer="95" rot="R90"/>
 <pinref part="JP3" gate="G$1" pin="8"/>
 <label x="20.32" y="160.02" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -22416,9 +22445,9 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <junction x="292.1" y="160.02"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="6"/>
-<wire x1="25.4" y1="160.02" x2="25.4" y2="157.48" width="0.1524" layer="91"/>
-<label x="25.4" y="160.02" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="111.76" y1="127" x2="114.3" y2="127" width="0.1524" layer="91"/>
+<pinref part="JP9" gate="G$1" pin="6"/>
+<label x="111.76" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LED0" class="0">
@@ -22467,11 +22496,6 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 </net>
 <net name="BTN3" class="0">
 <segment>
-<wire x1="50.8" y1="157.48" x2="50.8" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="G$1" pin="8"/>
-<label x="50.8" y="160.02" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
 <pinref part="JP16" gate="G$1" pin="4"/>
 <wire x1="419.1" y1="160.02" x2="429.26" y2="160.02" width="0.1524" layer="91"/>
 <label x="431.8" y="160.02" size="1.27" layer="95" xref="yes"/>
@@ -22479,6 +22503,11 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <wire x1="429.26" y1="160.02" x2="431.8" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="429.26" y1="162.56" x2="429.26" y2="160.02" width="0.1524" layer="91"/>
 <junction x="429.26" y="160.02"/>
+</segment>
+<segment>
+<pinref part="JP8" gate="G$1" pin="13"/>
+<wire x1="134.62" y1="132.08" x2="137.16" y2="132.08" width="0.1524" layer="91"/>
+<label x="137.16" y="132.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="BTN4" class="0">
@@ -22611,14 +22640,14 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 </net>
 <net name="LED2" class="0">
 <segment>
-<pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="160.02" x2="38.1" y2="157.48" width="0.1524" layer="91"/>
-<label x="38.1" y="160.02" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="358.14" y1="132.08" x2="355.6" y2="132.08" width="0.1524" layer="91"/>
 <label x="355.6" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="111.76" y1="132.08" x2="114.3" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="JP9" gate="G$1" pin="4"/>
+<label x="111.76" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SIG-" class="0">
@@ -22665,27 +22694,6 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <junction x="520.7" y="86.36"/>
 </segment>
 </net>
-<net name="BTN12" class="0">
-<segment>
-<wire x1="111.76" y1="132.08" x2="114.3" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="JP9" gate="G$1" pin="4"/>
-<label x="111.76" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="CTL4" class="0">
-<segment>
-<wire x1="111.76" y1="129.54" x2="114.3" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="JP9" gate="G$1" pin="5"/>
-<label x="111.76" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="CTL5" class="0">
-<segment>
-<wire x1="111.76" y1="127" x2="114.3" y2="127" width="0.1524" layer="91"/>
-<pinref part="JP9" gate="G$1" pin="6"/>
-<label x="111.76" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="A13" class="0">
 <segment>
 <pinref part="JP6" gate="G$1" pin="6"/>
@@ -22725,20 +22733,6 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <pinref part="R36" gate="G$1" pin="1"/>
 <wire x1="495.3" y1="58.42" x2="492.76" y2="58.42" width="0.1524" layer="91"/>
 <label x="492.76" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="LED12" class="0">
-<segment>
-<pinref part="JP8" gate="G$1" pin="13"/>
-<wire x1="134.62" y1="132.08" x2="137.16" y2="132.08" width="0.1524" layer="91"/>
-<label x="137.16" y="132.08" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="JP8" gate="G$1" pin="12"/>
-<wire x1="134.62" y1="129.54" x2="137.16" y2="129.54" width="0.1524" layer="91"/>
-<label x="137.16" y="129.54" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -23154,4 +23148,10 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
