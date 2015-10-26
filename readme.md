@@ -5,7 +5,12 @@ The body exhibit allows children to press one of twelve buttons and see that par
 
 ![The body exhibit lit up](https://raw.githubusercontent.com/nseidle/Body_Exhibit/master/Body-Exhibit-Front.jpg)
 
-The system monitors the state of 12 buttons. When a button is pressed a string of 8 LEDs is lit and plays the corresponding MP3 track. I designed a custom shield to allow for JST connections to each channel (LED+button). 
+The system monitors the state of 12 buttons. When a button is pressed a string of 10 LEDs is lit and plays the corresponding MP3 track. I designed a custom shield to allow for JST connections to each channel (LED+button). 
+
+The Sandwich
+===============
+
+The front face was clear plexiglass, a mylar graphic, then 1" compressed fiber board that was routed out to created the light boxes. I don't have the artwork for the body; I believe it was a educational poster that was printed on mylar or other semi-transparent material. The backer board was 3/8" thin and had the LED strips attached with hot glue. The arcade buttons were then drilled through the stack-up. The entire sandwich was pretty heavy but reasonably easy to handle. The control electronics were mounted to the back of the backer board with velcro for easy disconnect. The sandwich was spaced off the wall (because the buttons stick out the back) using 2x2s. The 2x2s were in turn attached to studs on the wall for a secure attachment.
 
 Materials used:
 
